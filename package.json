@@ -24,7 +24,8 @@
     "lint": "n8n-node lint",
     "lint:fix": "n8n-node lint --fix",
     "test": "node test/mock-test.mjs",
-    "prepublishOnly": "n8n-node prerelease"
+    "prepublishOnly": "n8n-node prerelease",
+    "release": "n8n-node release"
   },
   "n8n": {
     "n8nNodesApiVersion": 1,
