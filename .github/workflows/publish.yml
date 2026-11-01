@@ -32,5 +32,6 @@ jobs:
       - name: Publish with provenance
         run: npm publish --provenance --access public
         env:
+          RELEASE_MODE: 'true' # satisfies the n8n-node prepublishOnly guard
           # optional: only needed for the very first publish (or if no Trusted Publisher is configured)
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
