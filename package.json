@@ -1,0 +1,57 @@
+{
+  "name": "n8n-nodes-buchhaltungsbutler",
+  "version": "0.1.0",
+  "description": "n8n community node for the BuchhaltungsButler API v1 (receipts, transactions, invoices, postings, master data, reports)",
+  "keywords": [
+    "n8n-community-node-package",
+    "buchhaltungsbutler",
+    "buchhaltung",
+    "accounting",
+    "datev"
+  ],
+  "license": "AGPL-3.0-only",
+  "author": {
+    "name": "RISK007 GmbH",
+    "email": "github@haybit.de"
+  },
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "test": "node test/mock-test.mjs",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/BuchhaltungsButlerApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/BuchhaltungsButler/BuchhaltungsButler.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "eslint": "9.32.0",
+    "n8n-workflow": "^2.16.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "homepage": "https://risk007.de",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayBIT/n8n-nodes-buchhaltungsbutler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hayBIT/n8n-nodes-buchhaltungsbutler/issues"
+  }
+}
