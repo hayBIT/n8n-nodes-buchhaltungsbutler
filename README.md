@@ -73,4 +73,4 @@ Die Endpunkte sind deklarativ in `nodes/BuchhaltungsButler/operations.ts` defini
 
 ## Lizenz
 
-AGPL-3.0, siehe [LICENSE](LICENSE).
+MIT, siehe [LICENSE](LICENSE).

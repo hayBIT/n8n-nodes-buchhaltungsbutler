@@ -9,7 +9,7 @@
     "accounting",
     "datev"
   ],
-  "license": "AGPL-3.0-only",
+  "license": "MIT",
   "author": {
     "name": "RISK007 GmbH",
     "email": "github@haybit.de"
